@@ -10,6 +10,8 @@ body {
     /* grid-template-rows: 1fr 3fr; */
 }
 
+
+
 #title-section {
     color: #fff;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/photos/THJJRUhNlEc.png');
@@ -23,11 +25,56 @@ body {
     align-items: center;
 }
 
-#watchlist-link {
+.watchlist-link {
     text-decoration: none;
     color: #fff;
 }
 
 .flex {
     display: flex;
+}
+
+
+/* search bar */
+
+#search-bar {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+#search-input {
+    border-radius: 20px 0 0 20px;
+}
+
+#submit-button {
+    border-radius: 0 20px 20px 0;
+}
+
+.search-style {
+    padding: .5em 1em;
+    
+}
+
+
+/* movie grid search results */
+
+.title-container {
+    justify-content: space-around;
+    padding: .5em 0;
+}
+
+.title-block {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details-block {
+    justify-content: space-around;
+}
+
+.summary {
+    padding: 1em;
 }
